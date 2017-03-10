@@ -41,7 +41,7 @@ ADD conf/jail.local /etc/fail2ban/jail.local
 # Download FreeSWITCH.
 WORKDIR /usr/src
 ENV GIT_SSL_NO_VERIFY=1
-RUN git clone https://freeswitch.org/stash/scm/fs/freeswitch.git -b v1.6.15
+RUN git clone https://freeswitch.org/stash/scm/fs/freeswitch.git -b v1.7
 
 # Bootstrap the build.
 WORKDIR freeswitch
